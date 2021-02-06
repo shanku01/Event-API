@@ -21,12 +21,12 @@ mongoose.connect(process.env.DB_CONNECTION, {
 
 //Homepage for apies
 app.get('/', (req, res) => {
-    res.send('Welcome to the Employees Api');
+    res.send('Welcome to the Event Api');
 });
 
 //Route
-const employeeRoute = require("./routes/Employees")
-app.use('/employee', employeeRoute);
+const eventRoute = require("./routes/Event")
+app.use('/event', eventRoute);
 
 
 
