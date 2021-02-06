@@ -21,7 +21,7 @@ mongoose.connect(process.env.DB_CONNECTION, {
 
 //Homepage for apies
 app.get('/', (req, res) => {
-    res.send('Welcome to the Event Api');
+    res.send('Welcome to the Event Api to go /event to use API');
 });
 
 //Route
